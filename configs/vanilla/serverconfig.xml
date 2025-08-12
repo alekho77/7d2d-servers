@@ -34,7 +34,7 @@
   <property name="PersistentPlayerProfiles" value="false"/>
   <property name="MaxChunkAge" value="30"/>
   <property name="SaveDataLimit" value="-1"/>
-  <property name="GameWorld" value="EpicVales"/>
+  <property name="GameWorld" value="RWG"/>
   <property name="WorldGenSeed" value="EV-2025-AtlasNebula-4721"/>
   <property name="WorldGenSize" value="8192"/>
   <property name="GameName" value="VanillaGame"/>
