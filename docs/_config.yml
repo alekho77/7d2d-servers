@@ -23,12 +23,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
 
-# Настройки коллекций
-collections:
-  configs:
-    output: true
-    permalink: /:collection/:name/
-
 # Значения по умолчанию
 defaults:
   - scope:
@@ -36,11 +30,6 @@ defaults:
       type: "pages"
     values:
       layout: "default"
-  - scope:
-      path: ""
-      type: "configs"
-    values:
-      layout: "config"
 
 # SEO настройки
 lang: ru
