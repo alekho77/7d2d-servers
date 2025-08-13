@@ -1,5 +1,55 @@
 // Основной JavaScript для сайта 7D2D Servers
 
+// Функция для копирования ссылки в буфер обмена
+function copyToClipboard() {
+    const linkText = document.getElementById('telegram-link');
+    const copyBtn = document.querySelector('.copy-btn');
+    
+    // Создаем временный элемент для копирования
+    const textArea = document.createElement('textarea');
+    textArea.value = linkText.textContent;
+    document.body.appendChild(textArea);
+    
+    try {
+        // Выделяем и копируем текст
+        textArea.select();
+        textArea.setSelectionRange(0, 99999); // Для мобильных устройств
+        
+        const successful = document.execCommand('copy');
+        
+        if (successful) {
+            // Изменяем текст кнопки на короткое время
+            const originalText = copyBtn.textContent;
+            copyBtn.textContent = '✅ Скопировано!';
+            copyBtn.style.background = '#27ae60';
+            
+            setTimeout(() => {
+                copyBtn.textContent = originalText;
+                copyBtn.style.background = '#27ae60';
+            }, 2000);
+        }
+    } catch (err) {
+        console.error('Ошибка при копировании: ', err);
+        
+        // Fallback для современных браузеров
+        if (navigator.clipboard) {
+            navigator.clipboard.writeText(linkText.textContent).then(() => {
+                const originalText = copyBtn.textContent;
+                copyBtn.textContent = '✅ Скопировано!';
+                
+                setTimeout(() => {
+                    copyBtn.textContent = originalText;
+                }, 2000);
+            }).catch(err => {
+                console.error('Ошибка clipboard API: ', err);
+            });
+        }
+    } finally {
+        // Удаляем временный элемент
+        document.body.removeChild(textArea);
+    }
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     // Плавная прокрутка для навигационных ссылок
     const navLinks = document.querySelectorAll('nav a[href^="#"]');
