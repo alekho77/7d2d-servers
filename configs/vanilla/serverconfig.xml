@@ -1,7 +1,7 @@
 <ServerSettings>
    <property name="ServerName" value="EpicVales PVE Vanilla"/>
-   <property name="ServerDescription" value="Ванильная игра без всяких модификаций.\nПриватное тестирование настроек сервера.\nВайп 12.08.25. Следующий обсудим в октябре.\nhttps://t.me/+pibPBEIhai04NDFi"/>
-   <property name="ServerWebsiteURL" value=""/>
+   <property name="ServerDescription" value="Ванильная игра без всяких модификаций.\nПриватное тестирование настроек сервера.\nВайп 12.08.25. Следующий обсудим в октябре."/>
+   <property name="ServerWebsiteURL" value="https://t.me/+pibPBEIhai04NDFi"/>
    <property name="ServerPassword" value=""/>
    <property name="ServerLoginConfirmationText" value="Добро пожаловать! У нас рады всем, кто играет честно и по-доброму. Уважайте других. Приятной игры!"/>
    <property name="Region" value="Russia"/>
