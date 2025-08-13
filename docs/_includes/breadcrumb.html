@@ -1,0 +1,9 @@
+<nav class="breadcrumb">
+  <div class="container">
+    <a href="{{ '/' | relative_url }}">Главная</a>
+    {% if page.url != '/' %}
+      <span class="separator">/</span>
+      <span class="current">{{ page.title }}</span>
+    {% endif %}
+  </div>
+</nav>

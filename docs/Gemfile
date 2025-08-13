@@ -1,0 +1,19 @@
+# Gemfile для GitHub Pages
+
+source "https://rubygems.org"
+
+gem "github-pages", group: :jekyll_plugins
+
+# Дополнительные плагины
+group :jekyll_plugins do
+  gem "jekyll-feed"
+  gem "jekyll-sitemap"
+  gem "jekyll-seo-tag"
+end
+
+# Windows и JRuby не поддерживают polling для directory watcher
+# так что используйте этот gem только на платформах, которые его поддерживают
+gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
+
+# Performance-booster для watching directories on Windows
+gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
