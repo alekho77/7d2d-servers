@@ -63,7 +63,7 @@
     <!-- Name is optional for display purposes only -->
     <!-- <user platform="" userid="" name="" /> -->
     <!-- <group steamID="" name="" /> -->
-    <user platform="Steam" userid="76561198184701746" name="alekho" />
+    <group steamID="103582791474244360" name="Epic Vales" />
   </whitelist>
   <blacklist>
     <!-- <blacklisted platform="" userid="" name="" unbandate="" reason="" /> -->
