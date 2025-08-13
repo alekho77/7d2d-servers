@@ -64,5 +64,5 @@
 
 ## 📞 Контакты
 
-- GitHub: [@your-username](https://github.com/your-username)
-- Сайт проекта: [https://your-username.github.io/7d2d-servers/](https://your-username.github.io/7d2d-servers/)
+- GitHub: [@alekho77](https://github.com/alekho77)
+- Сайт проекта: [https://alekho77.github.io/7d2d-servers](https://alekho77.github.io/7d2d-servers)
