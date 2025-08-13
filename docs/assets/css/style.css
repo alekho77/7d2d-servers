@@ -22,45 +22,20 @@ body {
 header {
     background: linear-gradient(135deg, #2c3e50, #3498db);
     color: white;
-    padding: 1rem 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 1.5rem 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav h1 {
-    font-size: 1.8rem;
+header h1 {
+    font-size: 2.2rem;
     font-weight: bold;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 2rem;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-
-nav a:hover {
-    color: #ecf0f1;
+    margin: 0;
 }
 
 /* Основной контент */
 main {
-    margin-top: 80px;
+    margin-top: 0;
 }
 
 /* Секция Hero */
@@ -82,8 +57,66 @@ main {
 .hero p {
     font-size: 1.3rem;
     max-width: 600px;
-    margin: 0 auto;
+    margin: 0 auto 1rem;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.hero a {
+    color: #ecf0f1;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.hero a:hover {
+    border-bottom-color: #ecf0f1;
+}
+
+/* Секция правил */
+.rules {
+    background: white;
+    padding: 4rem 0;
+}
+
+.rules-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.rule {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+    transition: all 0.3s ease;
+}
+
+.rule:hover {
+    background: #e9ecef;
+    transform: translateX(5px);
+}
+
+.rule .emoji {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    min-width: 2rem;
+}
+
+.rule span:last-child {
+    flex: 1;
+    line-height: 1.6;
+}
+
+.rules-footer {
+    text-align: center;
+    margin-top: 2rem;
+    font-style: italic;
+    color: #2c3e50;
+    font-size: 1.1rem;
+    font-weight: 500;
 }
 
 /* Секции */
@@ -103,9 +136,14 @@ h2 {
 }
 
 /* Список серверов */
+.servers {
+    background: #f8f9fa;
+    padding: 4rem 0;
+}
+
 .server-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
     margin-top: 2rem;
 }
@@ -113,13 +151,75 @@ h2 {
 .server-item {
     background: white;
     padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
 }
 
 .server-item:hover {
     transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.15);
+}
+
+.server-icon {
+    flex-shrink: 0;
+}
+
+.server-icon img {
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+    border: 3px solid #e9ecef;
+    transition: border-color 0.3s ease;
+}
+
+.server-item:hover .server-icon img {
+    border-color: #3498db;
+}
+
+.server-info {
+    flex: 1;
+}
+
+.server-info h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+}
+
+.server-info p {
+    color: #6c757d;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.server-details {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.status {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.status.online {
+    color: #28a745;
+}
+
+.status.offline {
+    color: #dc3545;
+}
+
+.players {
+    font-size: 0.9rem;
+    color: #6c757d;
+    font-weight: 500;
 }
 
 /* Список конфигураций */
@@ -178,13 +278,8 @@ footer {
 
 /* Адаптивность */
 @media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        gap: 1rem;
-    }
-    
-    nav ul {
-        gap: 1rem;
+    header h1 {
+        font-size: 1.8rem;
     }
     
     .hero h2 {
@@ -195,7 +290,22 @@ footer {
         font-size: 1.1rem;
     }
     
-    main {
-        margin-top: 120px;
+    .server-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .server-details {
+        justify-content: center;
+    }
+    
+    .rule {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .rule .emoji {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
     }
 }
