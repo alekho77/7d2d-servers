@@ -81,7 +81,7 @@
    <property name="LandClaimCount" value="3"/>
    <property name="LandClaimSize" value="61"/>
    <property name="LandClaimDeadZone" value="15"/>
-   <property name="LandClaimExpiryTime" value="0"/>
+   <property name="LandClaimExpiryTime" value="1000"/>
    <property name="LandClaimDecayMode" value="2"/>
    <property name="LandClaimOnlineDurabilityModifier" value="0"/>
    <property name="LandClaimOfflineDurabilityModifier" value="0"/>
