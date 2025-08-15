@@ -2,8 +2,9 @@
 <xml>
   <ModInfo>
     <Name value="EnemyHealthBar"/>
-    <Description value="Displays enemy health bar above head"/>
+    <Description value="Displays enemy health bar above enemies"/>
     <Author value="Aleksei Khozin"/>
-    <Version value="1.0"/>
+    <Version value="1.0.0"/>
+    <Website value="https://alekho77.github.io/7d2d-servers/"/>
   </ModInfo>
 </xml>
