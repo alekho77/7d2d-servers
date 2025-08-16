@@ -76,7 +76,12 @@
                 
                 <!-- Статус EOS Services -->
                 <div class="eos-status">
-                    <h3>Статус EOS Services</h3>
+                    <div class="eos-header">
+                        <h3>Статус EOS Services</h3>
+                        <button class="refresh-btn" onclick="refreshEOSStatus()" title="Обновить статус">
+                            <span class="refresh-icon">🔄</span>
+                        </button>
+                    </div>
                     <div class="eos-services">
                         <div class="service-item" id="eos-sessions">
                             <div class="service-indicator">

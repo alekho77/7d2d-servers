@@ -215,11 +215,51 @@ h2 {
     border-left: 4px solid #3498db;
 }
 
+.eos-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
 .eos-status h3 {
-    margin: 0 0 1rem 0;
+    margin: 0;
     color: #2c3e50;
     font-size: 1.2rem;
-    text-align: center;
+}
+
+.refresh-btn {
+    background: #3498db;
+    border: none;
+    border-radius: 6px;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: white;
+}
+
+.refresh-btn:hover {
+    background: #2980b9;
+    transform: scale(1.1);
+}
+
+.refresh-btn:active {
+    transform: scale(0.95);
+}
+
+.refresh-icon {
+    font-size: 1rem;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.refresh-btn.spinning .refresh-icon {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
 }
 
 .eos-services {
@@ -504,6 +544,12 @@ footer {
     .eos-status {
         margin-bottom: 1.5rem;
         padding: 1rem;
+    }
+    
+    .eos-header {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
     }
     
     .eos-services {
