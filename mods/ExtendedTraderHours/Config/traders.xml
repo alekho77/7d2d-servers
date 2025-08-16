@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <!-- Remove time restrictions to make traders work 24/7 -->
+  
+  <!-- Trader Joel (ID:1) - remove time restrictions -->
+  <removeattribute xpath="/traders/trader_info[@id='1']/@open_time"/>
+  <removeattribute xpath="/traders/trader_info[@id='1']/@close_time"/>
+  
+  <!-- Trader Rekt (ID:2) - remove time restrictions -->
+  <removeattribute xpath="/traders/trader_info[@id='2']/@open_time"/>
+  <removeattribute xpath="/traders/trader_info[@id='2']/@close_time"/>
+  
+  <!-- Trader Hugh (ID:6) - remove time restrictions -->
+  <removeattribute xpath="/traders/trader_info[@id='6']/@open_time"/>
+  <removeattribute xpath="/traders/trader_info[@id='6']/@close_time"/>
+  
+  <!-- Trader Jen (ID:7) - remove time restrictions -->
+  <removeattribute xpath="/traders/trader_info[@id='7']/@open_time"/>
+  <removeattribute xpath="/traders/trader_info[@id='7']/@close_time"/>
+  
+  <!-- Trader Bob (ID:8) - remove time restrictions -->
+  <removeattribute xpath="/traders/trader_info[@id='8']/@open_time"/>
+  <removeattribute xpath="/traders/trader_info[@id='8']/@close_time"/>
+  
+</config>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModInfo>
+  <Name value="AlwaysOpenTraders"/>
+  <DisplayName value="Always Open Traders"/>
+  <Description value="Makes all traders work 24/7 - they never close"/>
+  <Author value="Aleksei Khozin"/>
+  <Version value="1.0.0"/>
+  <Website value="https://alekho77.github.io/7d2d-servers/"/>
+</ModInfo>
