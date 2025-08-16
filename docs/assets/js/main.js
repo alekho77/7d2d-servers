@@ -225,21 +225,21 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log('Загрузка статуса EOS Services...');
         
         // Показываем индикатор загрузки
-        setLoadingState(true);
+        window.setLoadingState(true);
         
         // Проверяем статус EOS Services
-        checkEOSService('sessions', 'EOS Sessions');
-        checkEOSService('anticheat', 'EOS Anti-cheat');
+        window.checkEOSService('sessions', 'EOS Sessions');
+        window.checkEOSService('anticheat', 'EOS Anti-cheat');
         
         // Обновляем время последнего обновления
-        updateLastUpdated();
+        window.updateLastUpdated();
         
         // Автоматическое обновление каждые 5 минут
         setInterval(() => {
             console.log('Автоматическое обновление статуса EOS...');
-            checkEOSService('sessions', 'EOS Sessions');
-            checkEOSService('anticheat', 'EOS Anti-cheat');
-            updateLastUpdated();
+            window.checkEOSService('sessions', 'EOS Sessions');
+            window.checkEOSService('anticheat', 'EOS Anti-cheat');
+            window.updateLastUpdated();
         }, 300000); // 5 минут
     }
     
@@ -504,12 +504,12 @@ window.refreshEOSStatus = function() {
     console.log('Ручное обновление статуса EOS...');
     
     // Показываем индикатор загрузки
-    setLoadingState(true);
+    window.setLoadingState(true);
     
     // Проверяем статус
     Promise.all([
-        checkEOSService('sessions', 'EOS Sessions'),
-        checkEOSService('anticheat', 'EOS Anti-cheat')
+        window.checkEOSService('sessions', 'EOS Sessions'),
+        window.checkEOSService('anticheat', 'EOS Anti-cheat')
     ]).finally(() => {
         // Убираем анимацию и активируем кнопку через 2 секунды
         setTimeout(() => {
@@ -519,7 +519,7 @@ window.refreshEOSStatus = function() {
             }
         }, 2000);
         
-        updateLastUpdated();
+        window.updateLastUpdated();
     });
 };
 
