@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModInfo>
+  <Name value="StealthAlways"/>
+  <DisplayName value="Stealth Always"/>
+  <Description value="Shows stealth bar always, not only when crouching"/>
+  <Author value="Aleksei Khozin"/>
+  <Version value="1.0.0"/>
+  <Website value="https://alekho77.github.io/7d2d-servers/"/>
+</ModInfo>
