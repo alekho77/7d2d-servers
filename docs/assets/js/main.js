@@ -135,8 +135,115 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
+    // Функция для загрузки статуса EOS Services
+    function loadEOSStatus() {
+        console.log('Загрузка статуса EOS Services...');
+        
+        // Проверяем статус EOS Sessions и Anti-cheat
+        checkEOSService('sessions', 'EOS Sessions');
+        checkEOSService('anticheat', 'EOS Anti-cheat');
+        
+        // Обновляем время последнего обновления
+        updateLastUpdated();
+        
+        // Автоматическое обновление каждые 5 минут
+        setInterval(() => {
+            checkEOSService('sessions', 'EOS Sessions');
+            checkEOSService('anticheat', 'EOS Anti-cheat');
+            updateLastUpdated();
+        }, 300000); // 5 минут
+    }
+    
+    // Функция для проверки конкретного EOS сервиса
+    async function checkEOSService(serviceType, serviceName) {
+        try {
+            // Имитируем проверку статуса (в реальности здесь будет API запрос)
+            const status = await simulateEOSCheck(serviceType);
+            
+            const dotElement = document.getElementById(`${serviceType}-dot`);
+            const statusElement = document.getElementById(`${serviceType}-status`);
+            
+            if (dotElement && statusElement) {
+                // Очищаем все классы статуса
+                dotElement.className = 'status-dot';
+                
+                // Устанавливаем новый статус
+                switch (status.state) {
+                    case 'operational':
+                        dotElement.classList.add('operational');
+                        statusElement.textContent = 'Работает';
+                        break;
+                    case 'degraded':
+                        dotElement.classList.add('degraded');
+                        statusElement.textContent = 'Частичный сбой';
+                        break;
+                    case 'outage':
+                        dotElement.classList.add('outage');
+                        statusElement.textContent = 'Недоступен';
+                        break;
+                    case 'maintenance':
+                        dotElement.classList.add('maintenance');
+                        statusElement.textContent = 'Обслуживание';
+                        break;
+                    default:
+                        dotElement.classList.add('operational');
+                        statusElement.textContent = 'Неизвестно';
+                }
+            }
+        } catch (error) {
+            console.error(`Ошибка при проверке ${serviceName}:`, error);
+            
+            const dotElement = document.getElementById(`${serviceType}-dot`);
+            const statusElement = document.getElementById(`${serviceType}-status`);
+            
+            if (dotElement && statusElement) {
+                dotElement.className = 'status-dot outage';
+                statusElement.textContent = 'Ошибка';
+            }
+        }
+    }
+    
+    // Симуляция проверки EOS статуса (замените на реальный API)
+    async function simulateEOSCheck(serviceType) {
+        // Имитируем задержку сети
+        await new Promise(resolve => setTimeout(resolve, 1000 + Math.random() * 2000));
+        
+        // Имитируем различные состояния с вероятностями
+        const rand = Math.random();
+        
+        if (rand < 0.85) {
+            return { state: 'operational' };
+        } else if (rand < 0.95) {
+            return { state: 'degraded' };
+        } else if (rand < 0.98) {
+            return { state: 'maintenance' };
+        } else {
+            return { state: 'outage' };
+        }
+    }
+    
+    // Обновление времени последнего обновления
+    function updateLastUpdated() {
+        const lastUpdatedElement = document.getElementById('last-updated');
+        if (lastUpdatedElement) {
+            const now = new Date();
+            const timeString = now.toLocaleString('ru-RU', {
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
+                day: '2-digit',
+                month: '2-digit',
+                year: 'numeric'
+            });
+            lastUpdatedElement.textContent = timeString;
+        }
+    }
+
     // Инициализация загрузки статуса серверов
     loadServerStatus();
+    
+    // Инициализация загрузки статуса EOS Services
+    loadEOSStatus();
 });
 
 // Функции для работы с API (заглушки)
@@ -174,6 +281,76 @@ const ServerAPI = {
         } catch (error) {
             console.error('Ошибка при получении информации о сервере:', error);
             return null;
+        }
+    }
+};
+
+// API для работы с EOS статусом
+const EOSAPI = {
+    // Получение статуса EOS Services
+    // В реальном проекте можно использовать публичный API Epic Games Status
+    // Пример: https://status.epicgames.com/api/v2/status.json
+    getEOSStatus: async function() {
+        try {
+            // Пример реального запроса к API Epic Games:
+            // const response = await fetch('https://status.epicgames.com/api/v2/status.json');
+            // const data = await response.json();
+            // return this.parseEOSStatus(data);
+            
+            // Пока используем симуляцию
+            return {
+                sessions: await simulateEOSCheck('sessions'),
+                anticheat: await simulateEOSCheck('anticheat')
+            };
+        } catch (error) {
+            console.error('Ошибка при получении статуса EOS:', error);
+            return {
+                sessions: { state: 'outage' },
+                anticheat: { state: 'outage' }
+            };
+        }
+    },
+    
+    // Парсинг данных от Epic Games Status API
+    parseEOSStatus: function(statusData) {
+        // Пример парсинга реальных данных от Epic Games
+        // Нужно найти компоненты "Epic Online Services", "Sessions", "Anti-cheat"
+        const components = statusData.page?.component || [];
+        
+        const findComponent = (name) => {
+            return components.find(comp => 
+                comp.name.toLowerCase().includes(name.toLowerCase())
+            );
+        };
+        
+        const sessionsComponent = findComponent('sessions') || findComponent('epic online services');
+        const anticheatComponent = findComponent('anti-cheat') || findComponent('anticheat');
+        
+        return {
+            sessions: {
+                state: this.mapEpicStatusToOur(sessionsComponent?.status || 'unknown')
+            },
+            anticheat: {
+                state: this.mapEpicStatusToOur(anticheatComponent?.status || 'unknown')
+            }
+        };
+    },
+    
+    // Маппинг статусов Epic Games к нашим статусам
+    mapEpicStatusToOur: function(epicStatus) {
+        switch (epicStatus.toLowerCase()) {
+            case 'operational':
+                return 'operational';
+            case 'degraded_performance':
+            case 'partial_outage':
+                return 'degraded';
+            case 'major_outage':
+            case 'under_maintenance':
+                return 'outage';
+            case 'maintenance':
+                return 'maintenance';
+            default:
+                return 'operational';
         }
     }
 };

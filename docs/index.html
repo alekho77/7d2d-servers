@@ -73,6 +73,31 @@
         <section class="servers">
             <div class="container">
                 <h2>Наши серверы</h2>
+                
+                <!-- Статус EOS Services -->
+                <div class="eos-status">
+                    <h3>Статус EOS Services</h3>
+                    <div class="eos-services">
+                        <div class="service-item" id="eos-sessions">
+                            <div class="service-indicator">
+                                <span class="status-dot operational" id="sessions-dot"></span>
+                                <span class="service-name">EOS Sessions</span>
+                            </div>
+                            <span class="service-status" id="sessions-status">Проверка...</span>
+                        </div>
+                        <div class="service-item" id="eos-anticheat">
+                            <div class="service-indicator">
+                                <span class="status-dot operational" id="anticheat-dot"></span>
+                                <span class="service-name">EOS Anti-cheat</span>
+                            </div>
+                            <span class="service-status" id="anticheat-status">Проверка...</span>
+                        </div>
+                    </div>
+                    <div class="eos-updated">
+                        <small>Последнее обновление: <span id="last-updated">—</span></small>
+                    </div>
+                </div>
+                
                 <div class="server-list">
                     <div class="server-item vanilla">
                         <div class="server-icon">
