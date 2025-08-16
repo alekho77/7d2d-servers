@@ -53,7 +53,7 @@
 <adminTools>
   <!-- Name in any entries is optional for display purposes only -->
   <users>
-    <!-- <user platform="Steam" userid="76561198021925107" name="Hint on who this user is" permission_level="0" /> -->
+    <user platform="Steam" userid="76561198022653121" name="Admin" permission_level="0" />
     <!-- <group steamID="103582791434672565" name="Steam Universe" permission_level_default="1000" permission_level_mod="0" /> -->
   </users>
   <whitelist>
@@ -63,7 +63,6 @@
     <!-- Name is optional for display purposes only -->
     <!-- <user platform="" userid="" name="" /> -->
     <!-- <group steamID="" name="" /> -->
-    <group steamID="103582791474244360" name="Epic Vales" />
   </whitelist>
   <blacklist>
     <!-- <blacklisted platform="" userid="" name="" unbandate="" reason="" /> -->
