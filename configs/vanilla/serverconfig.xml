@@ -47,7 +47,7 @@
    <property name="PlayerSafeZoneLevel" value="5"/>
    <property name="PlayerSafeZoneHours" value="1000"/>
    <property name="BuildCreate" value="false"/>
-   <property name="DayNightLength" value="120"/>
+   <property name="DayNightLength" value="90"/>
    <property name="DayLightLength" value="21"/>
    <property name="BiomeProgression" value="true"/>
    <property name="StormFreq" value="50"/>
