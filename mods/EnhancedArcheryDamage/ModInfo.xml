@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModInfo>
+  <Name value="EnhancedArcheryDamage"/>
+  <DisplayName value="Enhanced Archery Damage"/>
+  <Description value="Increases damage for bows and crossbows to make archery more effective in combat"/>
+  <Author value="Aleksei Khozin"/>
+  <Version value="1.0.0"/>
+  <Website value="https://alekho77.github.io/7d2d-servers/"/>
+</ModInfo>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <!-- Enhanced Archery Damage Mod -->
+  <!-- Increases damage for arrows and bolts to make archery more effective -->
+  
+  <!-- Stone Arrow: Increase EntityDamage from 35 to 49 -->
+  <set xpath="//item[@name='ammoArrowStone']/effect_group[@name='ammoArrowStone']/passive_effect[@name='EntityDamage' and @operation='base_set']/@value">49</set>
+  
+  <!-- Iron Arrow: Increase EntityDamage from 38 to 68 -->
+  <set xpath="//item[@name='ammoArrowIron']/effect_group[@name='ammoArrowIron']/passive_effect[@name='EntityDamage' and @operation='base_set']/@value">68</set>
+  
+  <!-- Steel AP Arrow: Increase EntityDamage from 42 to 92 -->
+  <set xpath="//item[@name='ammoArrowSteelAP']/effect_group[@name='ammoArrowSteelAP']/passive_effect[@name='EntityDamage' and @operation='base_set']/@value">92</set>
+  
+  <!-- Stone Crossbow Bolt: Increase EntityDamage from 50 to 58 -->
+  <set xpath="//item[@name='ammoCrossbowBoltStone']/effect_group[@name='ammoCrossbowBoltStone']/passive_effect[@name='EntityDamage' and @operation='base_set']/@value">58</set>
+  
+  <!-- Iron Crossbow Bolt: Increase EntityDamage from 59 to 100 -->
+  <set xpath="//item[@name='ammoCrossbowBoltIron']/effect_group[@name='ammoCrossbowBoltIron']/passive_effect[@name='EntityDamage' and @operation='base_set']/@value">100</set>
+  
+  <!-- Steel AP Crossbow Bolt: Increase EntityDamage from 63 to 142 -->
+  <set xpath="//item[@name='ammoCrossbowBoltSteelAP']/effect_group[@name='ammoCrossbowBoltSteelAP']/passive_effect[@name='EntityDamage' and @operation='base_set']/@value">142</set>
+  
+  <!-- Flaming Crossbow Bolt: Increase EntityDamage from 38 to 68 -->
+  <set xpath="//item[@name='ammoCrossbowBoltFlaming']/effect_group[@name='ammoCrossbowBoltFlaming']/passive_effect[@name='EntityDamage' and @operation='base_set']/@value">68</set>
+  
+  <!-- Flaming Arrow: Increase EntityDamage from 25 to 38 -->
+  <set xpath="//item[@name='ammoArrowFlaming']/effect_group[@name='ammoArrowFlaming']/passive_effect[@name='EntityDamage' and @operation='base_set']/@value">38</set>
+  
+  <!-- Exploding Arrow: Increase EntityDamage from 180 to 220 -->
+  <set xpath="//item[@name='ammoArrowExploding']/effect_group[@name='ammoArrowExploding']/passive_effect[@name='EntityDamage' and @operation='base_set']/@value">220</set>
+  
+  <!-- Exploding Crossbow Bolt: Increase EntityDamage from 250 to 270 -->
+  <set xpath="//item[@name='ammoCrossbowBoltExploding']/effect_group[@name='ammoCrossbowBoltExploding']/passive_effect[@name='EntityDamage' and @operation='base_set']/@value">270</set>
+  
+  <!-- Wooden Bow: Increase EntityDamage base_add from 9 to 19 -->
+  <set xpath="//item[@name='gunBowT1WoodenBow']/effect_group[@name='gunBowT1WoodenBow']/passive_effect[@name='EntityDamage' and @operation='base_add']/@value">19</set>
+  
+  <!-- Compound Bow: Increase EntityDamage base_add from 29 to 51 -->
+  <set xpath="//item[@name='gunBowT3CompoundBow']/effect_group[@name='gunBowT3CompoundBow']/passive_effect[@name='EntityDamage' and @operation='base_add']/@value">51</set>
+  
+  <!-- Compound Crossbow: Increase EntityDamage base_add from 25 to 50 -->
+  <set xpath="//item[@name='gunBowT3CompoundCrossbow']/effect_group[@name='gunBowT3CompoundCrossbow']/passive_effect[@name='EntityDamage' and @operation='base_add']/@value">50</set>
+  
+</config>
