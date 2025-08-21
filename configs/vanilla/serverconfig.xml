@@ -1,6 +1,6 @@
 <ServerSettings>
    <property name="ServerName" value="EpicVales PVE Vanilla"/>
-   <property name="ServerDescription" value="PVE, почти ваниль без модов.\nЗомби быстрые. В КН 12 зомби на игрока.\nТорговцы работают 24/7.\nДо 3 клаймов на игрока.\n\nВайп 12.08.25.\nСледующий в октябре."/>
+   <property name="ServerDescription" value="[00FF00]PVE[-], [FFFF00]почти ваниль без модов[-].\n[FF6600]Зомби быстрые[-]. В КН [FF0000]12 зомби на игрока[-].\n[00CFFF]Торговцы работают 24/7[-].\nДо [FFFF00]3 клаймов[-] на игрока.\n\n[FF0000]Вайп 12.08.25[-].\n[FFA500]Следующий в октябре/ноябре[-]."/>
    <property name="ServerWebsiteURL" value="https://alekho77.github.io/7d2d-servers/"/>
    <property name="ServerPassword" value=""/>
    <property name="ServerLoginConfirmationText" value="Добро пожаловать! У нас рады всем, кто играет честно и по-доброму. Уважайте других. Приятной игры!"/>
