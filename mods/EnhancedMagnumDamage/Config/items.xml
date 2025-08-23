@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <!-- Enhanced Magnum Damage Mod -->
+  <!-- Increases damage for .44 Magnum pistol to make it more effective -->
+  
+  <!-- Magnum .44 Pistol: Increase EntityDamage base_add to 50 -->
+  <set xpath="//item[@name='gunHandgunT2Magnum44']/effect_group[@name='gunHandgunT2Magnum44']/passive_effect[@name='EntityDamage' and @operation='base_add']/@value">50</set>
+  
+</config>
