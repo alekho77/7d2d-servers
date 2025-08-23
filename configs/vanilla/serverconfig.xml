@@ -63,7 +63,7 @@
    <property name="MaxQueuedMeshLayers" value="1000"/>
    <property name="EnemySpawnMode" value="true"/>
    <property name="EnemyDifficulty" value="1"/>
-   <property name="ZombieFeralSense" value="1"/>
+   <property name="ZombieFeralSense" value="2"/>
    <property name="ZombieMove" value="2"/>
    <property name="ZombieMoveNight" value="1"/>
    <property name="ZombieFeralMove" value="3"/>
