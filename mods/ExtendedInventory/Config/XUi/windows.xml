@@ -1,0 +1,10 @@
+<configs>
+	<!-- Extend player inventory to 6 rows (54 slots) -->
+	<set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/grid[@name='inventory']/@rows">6</set>
+	
+	<!-- Increase inventory window height for the 6th row -->
+	<set xpath="/windows/window[@name='windowBackpack']/@height">424</set>
+	
+	<!-- Increase content panel height -->
+	<set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/@height">378</set>
+</configs>
