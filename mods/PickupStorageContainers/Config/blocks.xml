@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+
+    <!-- *** PLAYER STORAGE CONTAINERS *** -->
+    
+    <!-- Player Writable Crates -->
+    <append xpath="/blocks/block[@name='cntWoodWritableCrate']">
+        <property name="CanPickup" value="true"/>
+        <property name="TakeDelay" value="2"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntWoodWritableCrateInsecure']">
+        <property name="CanPickup" value="true"/>
+        <property name="TakeDelay" value="2"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntIronWritableCrate']">
+        <property name="CanPickup" value="true"/>
+        <property name="TakeDelay" value="2"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntIronWritableCrateInsecure']">
+        <property name="CanPickup" value="true"/>
+        <property name="TakeDelay" value="2"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntSteelWritableCrate']">
+        <property name="CanPickup" value="true"/>
+        <property name="TakeDelay" value="2"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntSteelWritableCrateInsecure']">
+        <property name="CanPickup" value="true"/>
+        <property name="TakeDelay" value="2"/>
+    </append>
+
+    <!-- *** PLAYER SAFES *** -->
+    
+    <!-- Player Wall Safes -->
+    <append xpath="/blocks/block[@name='cntWallSafe_Player']">
+        <property name="CanPickup" value="true"/>
+        <property name="TakeDelay" value="3"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntWallSafeInsecure_Player']">
+        <property name="CanPickup" value="true"/>
+        <property name="TakeDelay" value="3"/>
+    </append>
+    
+    <!-- Player Desk Safes -->
+    <append xpath="/blocks/block[@name='cntDeskSafe_Player']">
+        <property name="CanPickup" value="true"/>
+        <property name="TakeDelay" value="3"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntDeskSafeInsecure_Player']">
+        <property name="CanPickup" value="true"/>
+        <property name="TakeDelay" value="3"/>
+    </append>
+
+    <!-- Player Gun Safes (All Colors) -->
+    <append xpath="/blocks/block[@name='cntGunSafe_Player']">
+        <property name="CanPickup" value="true"/>
+        <property name="TakeDelay" value="3"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntGunSafeInsecure_Player']">
+        <property name="CanPickup" value="true"/>
+        <property name="TakeDelay" value="3"/>
+    </append>
+    
+    <!-- Gun Safe Color Variants -->
+    <append xpath="/blocks/block[@name='cntGunSafe_PlayerWhite' or @name='cntGunSafe_PlayerBrown' or @name='cntGunSafe_PlayerRed' or @name='cntGunSafe_PlayerOrange' or @name='cntGunSafe_PlayerYellow' or @name='cntGunSafe_PlayerGreen' or @name='cntGunSafe_PlayerBlue' or @name='cntGunSafe_PlayerPurple' or @name='cntGunSafe_PlayerGrey' or @name='cntGunSafe_PlayerPink' or @name='cntGunSafe_PlayerArmyGreen']">
+        <property name="CanPickup" value="true"/>
+        <property name="TakeDelay" value="3"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntGunSafeInsecure_PlayerWhite' or @name='cntGunSafeInsecure_PlayerBrown' or @name='cntGunSafeInsecure_PlayerRed' or @name='cntGunSafeInsecure_PlayerOrange' or @name='cntGunSafeInsecure_PlayerYellow' or @name='cntGunSafeInsecure_PlayerGreen' or @name='cntGunSafeInsecure_PlayerBlue' or @name='cntGunSafeInsecure_PlayerPurple' or @name='cntGunSafeInsecure_PlayerGrey' or @name='cntGunSafeInsecure_PlayerPink' or @name='cntGunSafeInsecure_PlayerArmyGreen']">
+        <property name="CanPickup" value="true"/>
+        <property name="TakeDelay" value="3"/>
+    </append>
+
+    <!-- *** OTHER STORAGE CONTAINERS *** -->
+    
+    <!-- Garage Storage -->
+    <append xpath="/blocks/block[@name='cntGarageStorage']">
+        <property name="CanPickup" value="true"/>
+        <property name="TakeDelay" value="2"/>
+    </append>
+    
+    <!-- Coolers -->
+    <append xpath="/blocks/block[@name='cntCoolerBlue']">
+        <property name="CanPickup" value="true"/>
+        <property name="TakeDelay" value="2"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntCoolerRed']">
+        <property name="CanPickup" value="true"/>
+        <property name="TakeDelay" value="2"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntCoolerGreen']">
+        <property name="CanPickup" value="true"/>
+        <property name="TakeDelay" value="2"/>
+    </append>
+    
+    <!-- Fridges/Refrigerators -->
+    <append xpath="/blocks/block[@name='cntRetroFridgeVer1Closed_Player']">
+        <property name="CanPickup" value="true"/>
+        <property name="TakeDelay" value="3"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntFridgeStainlessSteel_Player']">
+        <property name="CanPickup" value="true"/>
+        <property name="TakeDelay" value="3"/>
+    </append>
+    
+    <!-- Cabinets (Kitchen/Bath) -->
+    <append xpath="/blocks/block[@name='cntCabinetBottom']">
+        <property name="CanPickup" value="true"/>
+        <property name="TakeDelay" value="2"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntCounterHollowCabinet']">
+        <property name="CanPickup" value="true"/>
+        <property name="TakeDelay" value="2"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntCupboardCabinetRedTopClosed']">
+        <property name="CanPickup" value="true"/>
+        <property name="TakeDelay" value="2"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntCupboardCornerCNRRed']">
+        <property name="CanPickup" value="true"/>
+        <property name="TakeDelay" value="2"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntCupboardCabinetFullRedTopClosed']">
+        <property name="CanPickup" value="true"/>
+        <property name="TakeDelay" value="2"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntCabinetOldBottom']">
+        <property name="CanPickup" value="true"/>
+        <property name="TakeDelay" value="2"/>
+    </append>
+
+</config>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModInfo>
+  <Name value="PickupStorageContainers"/>
+  <DisplayName value="Pickup Storage Containers"/>
+  <Description value="Allows players to pickup all storage containers/chests/safes on their base (requires Land Claim Block ownership)"/>
+  <Author value="Aleksei Khozin"/>
+  <Version value="1.0.0"/>
+  <Website value="https://alekho77.github.io/7d2d-servers/"/>
+</ModInfo>
