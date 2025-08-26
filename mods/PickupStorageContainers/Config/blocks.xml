@@ -5,145 +5,200 @@
     
     <!-- Player Writable Crates -->
     <append xpath="/blocks/block[@name='cntWoodWritableCrate']">
-        <property name="CanPickup" value="true"/>
-        <property name="TakeDelay" value="2"/>
+        <drop event="Harvest" name="cntWoodWritableCrate" count="1" tool_category="Disassemble"/>
     </append>
     
     <append xpath="/blocks/block[@name='cntWoodWritableCrateInsecure']">
-        <property name="CanPickup" value="true"/>
-        <property name="TakeDelay" value="2"/>
+        <drop event="Harvest" name="cntWoodWritableCrateInsecure" count="1" tool_category="Disassemble"/>
     </append>
     
     <append xpath="/blocks/block[@name='cntIronWritableCrate']">
-        <property name="CanPickup" value="true"/>
-        <property name="TakeDelay" value="2"/>
+        <drop event="Harvest" name="cntIronWritableCrate" count="1" tool_category="Disassemble"/>
     </append>
     
     <append xpath="/blocks/block[@name='cntIronWritableCrateInsecure']">
-        <property name="CanPickup" value="true"/>
-        <property name="TakeDelay" value="2"/>
+        <drop event="Harvest" name="cntIronWritableCrateInsecure" count="1" tool_category="Disassemble"/>
     </append>
     
     <append xpath="/blocks/block[@name='cntSteelWritableCrate']">
-        <property name="CanPickup" value="true"/>
-        <property name="TakeDelay" value="2"/>
+        <drop event="Harvest" name="cntSteelWritableCrate" count="1" tool_category="Disassemble"/>
     </append>
     
     <append xpath="/blocks/block[@name='cntSteelWritableCrateInsecure']">
-        <property name="CanPickup" value="true"/>
-        <property name="TakeDelay" value="2"/>
+        <drop event="Harvest" name="cntSteelWritableCrateInsecure" count="1" tool_category="Disassemble"/>
     </append>
 
     <!-- *** PLAYER SAFES *** -->
     
     <!-- Player Wall Safes -->
     <append xpath="/blocks/block[@name='cntWallSafe_Player']">
-        <property name="CanPickup" value="true"/>
-        <property name="TakeDelay" value="3"/>
+        <drop event="Harvest" name="cntWallSafe_Player" count="1" tool_category="Disassemble"/>
     </append>
     
     <append xpath="/blocks/block[@name='cntWallSafeInsecure_Player']">
-        <property name="CanPickup" value="true"/>
-        <property name="TakeDelay" value="3"/>
+        <drop event="Harvest" name="cntWallSafeInsecure_Player" count="1" tool_category="Disassemble"/>
     </append>
     
     <!-- Player Desk Safes -->
     <append xpath="/blocks/block[@name='cntDeskSafe_Player']">
-        <property name="CanPickup" value="true"/>
-        <property name="TakeDelay" value="3"/>
+        <drop event="Harvest" name="cntDeskSafe_Player" count="1" tool_category="Disassemble"/>
     </append>
     
     <append xpath="/blocks/block[@name='cntDeskSafeInsecure_Player']">
-        <property name="CanPickup" value="true"/>
-        <property name="TakeDelay" value="3"/>
+        <drop event="Harvest" name="cntDeskSafeInsecure_Player" count="1" tool_category="Disassemble"/>
     </append>
 
     <!-- Player Gun Safes (All Colors) -->
     <append xpath="/blocks/block[@name='cntGunSafe_Player']">
-        <property name="CanPickup" value="true"/>
-        <property name="TakeDelay" value="3"/>
+        <drop event="Harvest" name="cntGunSafe_Player" count="1" tool_category="Disassemble"/>
     </append>
     
     <append xpath="/blocks/block[@name='cntGunSafeInsecure_Player']">
-        <property name="CanPickup" value="true"/>
-        <property name="TakeDelay" value="3"/>
+        <drop event="Harvest" name="cntGunSafeInsecure_Player" count="1" tool_category="Disassemble"/>
     </append>
     
     <!-- Gun Safe Color Variants -->
-    <append xpath="/blocks/block[@name='cntGunSafe_PlayerWhite' or @name='cntGunSafe_PlayerBrown' or @name='cntGunSafe_PlayerRed' or @name='cntGunSafe_PlayerOrange' or @name='cntGunSafe_PlayerYellow' or @name='cntGunSafe_PlayerGreen' or @name='cntGunSafe_PlayerBlue' or @name='cntGunSafe_PlayerPurple' or @name='cntGunSafe_PlayerGrey' or @name='cntGunSafe_PlayerPink' or @name='cntGunSafe_PlayerArmyGreen']">
-        <property name="CanPickup" value="true"/>
-        <property name="TakeDelay" value="3"/>
+    <append xpath="/blocks/block[@name='cntGunSafe_PlayerWhite']">
+        <drop event="Harvest" name="cntGunSafe_PlayerWhite" count="1" tool_category="Disassemble"/>
     </append>
     
-    <append xpath="/blocks/block[@name='cntGunSafeInsecure_PlayerWhite' or @name='cntGunSafeInsecure_PlayerBrown' or @name='cntGunSafeInsecure_PlayerRed' or @name='cntGunSafeInsecure_PlayerOrange' or @name='cntGunSafeInsecure_PlayerYellow' or @name='cntGunSafeInsecure_PlayerGreen' or @name='cntGunSafeInsecure_PlayerBlue' or @name='cntGunSafeInsecure_PlayerPurple' or @name='cntGunSafeInsecure_PlayerGrey' or @name='cntGunSafeInsecure_PlayerPink' or @name='cntGunSafeInsecure_PlayerArmyGreen']">
-        <property name="CanPickup" value="true"/>
-        <property name="TakeDelay" value="3"/>
+    <append xpath="/blocks/block[@name='cntGunSafe_PlayerBrown']">
+        <drop event="Harvest" name="cntGunSafe_PlayerBrown" count="1" tool_category="Disassemble"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntGunSafe_PlayerRed']">
+        <drop event="Harvest" name="cntGunSafe_PlayerRed" count="1" tool_category="Disassemble"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntGunSafe_PlayerOrange']">
+        <drop event="Harvest" name="cntGunSafe_PlayerOrange" count="1" tool_category="Disassemble"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntGunSafe_PlayerYellow']">
+        <drop event="Harvest" name="cntGunSafe_PlayerYellow" count="1" tool_category="Disassemble"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntGunSafe_PlayerGreen']">
+        <drop event="Harvest" name="cntGunSafe_PlayerGreen" count="1" tool_category="Disassemble"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntGunSafe_PlayerBlue']">
+        <drop event="Harvest" name="cntGunSafe_PlayerBlue" count="1" tool_category="Disassemble"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntGunSafe_PlayerPurple']">
+        <drop event="Harvest" name="cntGunSafe_PlayerPurple" count="1" tool_category="Disassemble"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntGunSafe_PlayerGrey']">
+        <drop event="Harvest" name="cntGunSafe_PlayerGrey" count="1" tool_category="Disassemble"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntGunSafe_PlayerPink']">
+        <drop event="Harvest" name="cntGunSafe_PlayerPink" count="1" tool_category="Disassemble"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntGunSafe_PlayerArmyGreen']">
+        <drop event="Harvest" name="cntGunSafe_PlayerArmyGreen" count="1" tool_category="Disassemble"/>
+    </append>
+    
+    <!-- Gun Safe Insecure Color Variants -->
+    <append xpath="/blocks/block[@name='cntGunSafeInsecure_PlayerWhite']">
+        <drop event="Harvest" name="cntGunSafeInsecure_PlayerWhite" count="1" tool_category="Disassemble"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntGunSafeInsecure_PlayerBrown']">
+        <drop event="Harvest" name="cntGunSafeInsecure_PlayerBrown" count="1" tool_category="Disassemble"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntGunSafeInsecure_PlayerRed']">
+        <drop event="Harvest" name="cntGunSafeInsecure_PlayerRed" count="1" tool_category="Disassemble"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntGunSafeInsecure_PlayerOrange']">
+        <drop event="Harvest" name="cntGunSafeInsecure_PlayerOrange" count="1" tool_category="Disassemble"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntGunSafeInsecure_PlayerYellow']">
+        <drop event="Harvest" name="cntGunSafeInsecure_PlayerYellow" count="1" tool_category="Disassemble"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntGunSafeInsecure_PlayerGreen']">
+        <drop event="Harvest" name="cntGunSafeInsecure_PlayerGreen" count="1" tool_category="Disassemble"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntGunSafeInsecure_PlayerBlue']">
+        <drop event="Harvest" name="cntGunSafeInsecure_PlayerBlue" count="1" tool_category="Disassemble"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntGunSafeInsecure_PlayerPurple']">
+        <drop event="Harvest" name="cntGunSafeInsecure_PlayerPurple" count="1" tool_category="Disassemble"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntGunSafeInsecure_PlayerGrey']">
+        <drop event="Harvest" name="cntGunSafeInsecure_PlayerGrey" count="1" tool_category="Disassemble"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntGunSafeInsecure_PlayerPink']">
+        <drop event="Harvest" name="cntGunSafeInsecure_PlayerPink" count="1" tool_category="Disassemble"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntGunSafeInsecure_PlayerArmyGreen']">
+        <drop event="Harvest" name="cntGunSafeInsecure_PlayerArmyGreen" count="1" tool_category="Disassemble"/>
     </append>
 
     <!-- *** OTHER STORAGE CONTAINERS *** -->
     
     <!-- Garage Storage -->
     <append xpath="/blocks/block[@name='cntGarageStorage']">
-        <property name="CanPickup" value="true"/>
-        <property name="TakeDelay" value="2"/>
+        <drop event="Harvest" name="cntGarageStorage" count="1" tool_category="Disassemble"/>
     </append>
     
     <!-- Coolers -->
     <append xpath="/blocks/block[@name='cntCoolerBlue']">
-        <property name="CanPickup" value="true"/>
-        <property name="TakeDelay" value="2"/>
+        <drop event="Harvest" name="cntCoolerBlue" count="1" tool_category="Disassemble"/>
     </append>
     
     <append xpath="/blocks/block[@name='cntCoolerRed']">
-        <property name="CanPickup" value="true"/>
-        <property name="TakeDelay" value="2"/>
+        <drop event="Harvest" name="cntCoolerRed" count="1" tool_category="Disassemble"/>
     </append>
     
     <append xpath="/blocks/block[@name='cntCoolerGreen']">
-        <property name="CanPickup" value="true"/>
-        <property name="TakeDelay" value="2"/>
+        <drop event="Harvest" name="cntCoolerGreen" count="1" tool_category="Disassemble"/>
     </append>
     
     <!-- Fridges/Refrigerators -->
     <append xpath="/blocks/block[@name='cntRetroFridgeVer1Closed_Player']">
-        <property name="CanPickup" value="true"/>
-        <property name="TakeDelay" value="3"/>
+        <drop event="Harvest" name="cntRetroFridgeVer1Closed_Player" count="1" tool_category="Disassemble"/>
     </append>
     
     <append xpath="/blocks/block[@name='cntFridgeStainlessSteel_Player']">
-        <property name="CanPickup" value="true"/>
-        <property name="TakeDelay" value="3"/>
+        <drop event="Harvest" name="cntFridgeStainlessSteel_Player" count="1" tool_category="Disassemble"/>
     </append>
     
     <!-- Cabinets (Kitchen/Bath) -->
     <append xpath="/blocks/block[@name='cntCabinetBottom']">
-        <property name="CanPickup" value="true"/>
-        <property name="TakeDelay" value="2"/>
+        <drop event="Harvest" name="cntCabinetBottom" count="1" tool_category="Disassemble"/>
     </append>
     
     <append xpath="/blocks/block[@name='cntCounterHollowCabinet']">
-        <property name="CanPickup" value="true"/>
-        <property name="TakeDelay" value="2"/>
+        <drop event="Harvest" name="cntCounterHollowCabinet" count="1" tool_category="Disassemble"/>
     </append>
     
     <append xpath="/blocks/block[@name='cntCupboardCabinetRedTopClosed']">
-        <property name="CanPickup" value="true"/>
-        <property name="TakeDelay" value="2"/>
+        <drop event="Harvest" name="cntCupboardCabinetRedTopClosed" count="1" tool_category="Disassemble"/>
     </append>
     
     <append xpath="/blocks/block[@name='cntCupboardCornerCNRRed']">
-        <property name="CanPickup" value="true"/>
-        <property name="TakeDelay" value="2"/>
+        <drop event="Harvest" name="cntCupboardCornerCNRRed" count="1" tool_category="Disassemble"/>
     </append>
     
     <append xpath="/blocks/block[@name='cntCupboardCabinetFullRedTopClosed']">
-        <property name="CanPickup" value="true"/>
-        <property name="TakeDelay" value="2"/>
+        <drop event="Harvest" name="cntCupboardCabinetFullRedTopClosed" count="1" tool_category="Disassemble"/>
     </append>
     
     <append xpath="/blocks/block[@name='cntCabinetOldBottom']">
-        <property name="CanPickup" value="true"/>
-        <property name="TakeDelay" value="2"/>
+        <drop event="Harvest" name="cntCabinetOldBottom" count="1" tool_category="Disassemble"/>
     </append>
 
 </config>

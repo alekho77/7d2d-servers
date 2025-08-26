@@ -1,26 +1,8 @@
-# Pickup Storage Containers ### How to Use
+# Recoverable Storage Containers Mod
 
-1. **Place storage containers on your base** within your Land Claim Block area
-2. **Hold 'E' key** while looking at any supported storage container (2-3 seconds)
-3. **Select "Pickup"** from the radial interaction menu
-4. The container will be returned to your inventory with all contents preserved
+## Description
 
-## Requirements
-
-- **Land Claim Block ownership**: You must own the LCB in the area where the container is placed
-- **Area coverage**: Storage containers must be within your LCB protected area
-- **Container access**: You must have access to the container (not locked by another player)
-- **Hold interaction**: You need to hold 'E' for 2-3 seconds to see the pickup option
-
-## Technical Details
-
-The mod adds two essential properties to each supported container:
-- **`CanPickup="true"`**: Enables the pickup functionality
-- **`TakeDelay="2-3"`**: Sets the hold time required (2 seconds for crates/cabinets, 3 seconds for safes/fridges)
-
-These work together with the game's Land Claim Block system to provide secure pickup functionality.scription
-
-This mod allows players to pickup all storage containers, chests, safes, and other storage blocks on their base. The pickup feature works only within the Land Claim Block (LCB) area and requires ownership of the LCB.
+This mod allows players to "disassemble" and recover all storage containers, chests, safes, and other storage blocks on their base. When you disassemble an empty container using the proper tools, you get the container back as an item instead of just raw materials.
 
 ## Features
 
@@ -46,23 +28,27 @@ This mod allows players to pickup all storage containers, chests, safes, and oth
 
 ## How to Use
 
-1. **Place storage containers on your base** within your Land Claim Block area
-2. **Hold 'E' key** while looking at any supported storage container
-3. **Select "Pickup"** from the interaction menu
-4. The container will be returned to your inventory with all contents preserved
+1. **Empty the container completely** - remove all items from the storage container
+2. **Use disassemble tools** - use a wrench, nail gun, or impact driver
+3. **Right-click to disassemble** the empty container
+4. **Collect the container item** - you'll get the container back instead of raw materials
 
 ## Requirements
 
-- **Land Claim Block ownership**: You must own the LCB in the area
-- **Area coverage**: Storage containers must be within your LCB protected area
-- **Container access**: You must have access to the container (not locked by another player)
+- **Empty containers only**: Containers must be completely empty before disassembly
+- **Proper tools**: You need disassemble tools (wrench, nail gun, impact driver)
+- **No special area requirements**: Works anywhere, no Land Claim Block required
+
+## Technical Details
+
+The mod adds `drop event="Harvest"` with `tool_category="Disassemble"` to each supported container, which makes them return themselves when disassembled with the proper tools instead of dropping raw materials.
 
 ## Gameplay Benefits
 
-- **Easy base reorganization**: Move storage containers without losing contents
-- **Flexible base building**: Redesign your storage layout anytime
-- **Protection**: Only you can pickup containers in your LCB area
-- **Convenience**: No need to empty containers before moving them
+- **Easy base reorganization**: Move storage containers without losing them
+- **Flexible base building**: Redesign your storage layout anytime  
+- **Resource efficiency**: Get your containers back instead of losing them to disassembly
+- **No content loss**: Just empty containers before moving them
 
 ## Installation
 
@@ -76,13 +62,14 @@ This mod allows players to pickup all storage containers, chests, safes, and oth
 - Compatible with other storage/base building mods
 - Server and single-player compatible
 - No conflicts with vanilla game mechanics
+- Uses standard disassemble mechanics instead of special pickup systems
 
 ## Notes
 
-- Only works on storage containers you have access to
-- Requires Land Claim Block ownership in the area
-- Containers will retain all their contents when picked up
-- Works the same way as picking up workstations and other placeable items
+- Containers must be completely empty to recover them
+- Works with any tool that has disassemble capability
+- More realistic than magic "pickup" - you're actually carefully disassembling
+- No Land Claim Block requirements - works anywhere
 
 ---
 
