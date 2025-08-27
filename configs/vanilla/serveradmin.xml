@@ -74,6 +74,8 @@
     <!-- <permission cmd="dm" permission_level="0" /> -->
     <!-- <permission cmd="kick" permission_level="1" /> -->
     <!-- <permission cmd="say" permission_level="1000" /> -->
+    <permission cmd="settime" permission_level="1" />
+    <permission cmd="setgamestat" permission_level="1" />
     <permission cmd="rendermap" permission_level="1" />
     <permission cmd="kick" permission_level="1" />
     <permission cmd="kill" permission_level="1" />
