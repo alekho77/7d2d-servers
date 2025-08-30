@@ -1,0 +1,8 @@
+# Redirect all requests to the new domain
+RewriteEngine On
+RewriteRule ^(.*)$ https://www.epicvales.online/$1 [R=301,L]
+
+# Alternative meta refresh fallback
+<Files "index.html">
+    Header add Refresh "5; url=https://www.epicvales.online/"
+</Files>
