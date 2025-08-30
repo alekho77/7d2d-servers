@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<configs>
-	<!-- Stealth bar: show it always -->
-	<set xpath="/windows/window[@name='HUDLeftStatBars']/rect[@name='hud']/rect[@stat_type='Stealth']/@visible">true</set>
-</configs>
