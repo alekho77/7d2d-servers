@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+  <!-- Transmute Arrows and Bolts Mod -->
+  <!-- Adds recipes to convert arrows to crossbow bolts and vice versa without material loss -->
+  
+  <append xpath="/recipes">
+    
+    <!-- CONVERTING ARROWS TO CROSSBOW BOLTS -->
+    
+    <!-- Stone Arrow to Stone Crossbow Bolt: 1:1 conversion (1 sec - base level) -->
+    <recipe name="ammoCrossbowBoltStone" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="ammoArrowStone" count="1" />
+    </recipe>
+    
+    <!-- Iron Arrow to Iron Crossbow Bolt: 1:1 conversion (1 sec - √2¹ ≈ 1.4 → 1) -->
+    <recipe name="ammoCrossbowBoltIron" count="1" craft_time="1" craft_exp_gain="0" craft_area="workbench">
+      <ingredient name="ammoArrowIron" count="1" />
+    </recipe>
+    
+    <!-- Steel AP Arrow to Steel AP Crossbow Bolt: 1:1 conversion (2 sec - √2² = 2) -->
+    <recipe name="ammoCrossbowBoltSteelAP" count="1" craft_time="2" craft_exp_gain="0" craft_area="workbench">
+      <ingredient name="ammoArrowSteelAP" count="1" />
+    </recipe>
+    
+    <!-- Flaming Arrow to Flaming Crossbow Bolt: 1:1 conversion (3 sec - √2³ ≈ 2.8 → 3) -->
+    <recipe name="ammoCrossbowBoltFlaming" count="1" craft_time="3" craft_exp_gain="0" craft_area="workbench">
+      <ingredient name="ammoArrowFlaming" count="1" />
+    </recipe>
+    
+    <!-- Exploding Arrow to Exploding Crossbow Bolt: 1:1 conversion (4 sec - √2⁴ = 4) -->
+    <recipe name="ammoCrossbowBoltExploding" count="1" craft_time="4" craft_exp_gain="0" craft_area="workbench">
+      <ingredient name="ammoArrowExploding" count="1" />
+    </recipe>
+    
+    <!-- CONVERTING CROSSBOW BOLTS TO ARROWS -->
+    
+    <!-- Stone Crossbow Bolt to Stone Arrow: 1:1 conversion (1 sec - base level) -->
+    <recipe name="ammoArrowStone" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="ammoCrossbowBoltStone" count="1" />
+    </recipe>
+    
+    <!-- Iron Crossbow Bolt to Iron Arrow: 1:1 conversion (1 sec - √2¹ ≈ 1.4 → 1) -->
+    <recipe name="ammoArrowIron" count="1" craft_time="1" craft_exp_gain="0" craft_area="workbench">
+      <ingredient name="ammoCrossbowBoltIron" count="1" />
+    </recipe>
+    
+    <!-- Steel AP Crossbow Bolt to Steel AP Arrow: 1:1 conversion (2 sec - √2² = 2) -->
+    <recipe name="ammoArrowSteelAP" count="1" craft_time="2" craft_exp_gain="0" craft_area="workbench">
+      <ingredient name="ammoCrossbowBoltSteelAP" count="1" />
+    </recipe>
+    
+    <!-- Flaming Crossbow Bolt to Flaming Arrow: 1:1 conversion (3 sec - √2³ ≈ 2.8 → 3) -->
+    <recipe name="ammoArrowFlaming" count="1" craft_time="3" craft_exp_gain="0" craft_area="workbench">
+      <ingredient name="ammoCrossbowBoltFlaming" count="1" />
+    </recipe>
+    
+    <!-- Exploding Crossbow Bolt to Exploding Arrow: 1:1 conversion (4 sec - √2⁴ = 4) -->
+    <recipe name="ammoArrowExploding" count="1" craft_time="4" craft_exp_gain="0" craft_area="workbench">
+      <ingredient name="ammoCrossbowBoltExploding" count="1" />
+    </recipe>
+    
+  </append>
+  
+</configs>
