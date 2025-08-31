@@ -3,12 +3,11 @@
   <append xpath="/controls">
     <backpack_item_stack_compact>
       <rect controller="ItemStack" style="itemStack, hover" collider_scale="1.0" on_scroll="false" allow_dropping="true" prefix_id="false" show_favorites="false" tooltip="{tooltip}">
-        <!-- Outer/inner borders sized for 56px cell -->
-        <sprite depth="2" name="backgroundMain" sprite="menu_empty3px" type="sliced" fillcenter="false" width="58" height="58"/>
-        <sprite depth="3" name="background"      sprite="menu_empty3px" type="sliced" fillcenter="false" width="53" height="53" color="{selectionbordercolor}"/>
+        <!-- Single background border for clean look -->
+        <sprite depth="3" name="background" sprite="menu_empty3px" type="sliced" fillcenter="false" width="56" height="56" color="{selectionbordercolor}"/>
 
         <!-- Item icon scaled down to fit 56×56 -->
-        <sprite depth="6" name="itemIcon" atlas="ItemIconAtlas" sprite="{itemicon}" width="53" height="53" pivot="center" foregroundlayer="true" color="{iconcolor}" pos="29,-26"/>
+        <sprite depth="6" name="itemIcon" atlas="ItemIconAtlas" sprite="{itemicon}" width="53" height="53" pivot="center" foregroundlayer="true" color="{iconcolor}" pos="28,-28"/>
 
         <!-- Small overlays -->
         <sprite depth="8" name="favoriteIcon"    sprite="server_favorite"           width="18" height="18" pos="2,-2"  foregroundlayer="true" visible="{isfavorite}"/>
@@ -16,17 +15,17 @@
         <sprite depth="8" name="itemtypeicon"    sprite="ui_game_symbol_{itemtypeicon}" width="18" height="18" pos="2,-2" foregroundlayer="true" visible="{hasitemtypeicon}" color="{itemtypeicontint}"/>
 
         <!-- Durability bar shortened for 56px -->
-        <sprite       depth="3" name="durabilityBackground" sprite="menu_empty3px" type="sliced" width="49" height="7" pos="1,-44" color="[darkGrey]"  foregroundlayer="true" visible="{hasdurability}"/>
-        <filledsprite depth="4" name="durability"           sprite="menu_empty2px" type="filled" width="49" height="7" pos="1,-44" color="{durabilitycolor}" fill="{durabilityfill}" foregroundlayer="true" visible="{hasdurability}"/>
+        <sprite       depth="3" name="durabilityBackground" sprite="menu_empty3px" type="sliced" width="52" height="7" pos="2,-47" color="[darkGrey]"  foregroundlayer="true" visible="{hasdurability}"/>
+        <filledsprite depth="4" name="durability"           sprite="menu_empty2px" type="filled" width="52" height="7" pos="2,-47" color="{durabilitycolor}" fill="{durabilityfill}" foregroundlayer="true" visible="{hasdurability}"/>
 
-        <label depth="7" name="stackValue" pos="-2,-38" width="56" height="22" text="{itemcount}" font_size="20" effect="outline" justify="{#hasdurability ? 'Center' : 'Right'}"/>
-        <label depth="7" name="timer"      pos="29,-32" width="56" height="18" font_size="18" justify="center" pivot="center" effect="outline" color="[beige]"/>
+        <label depth="7" name="stackValue" pos="0,-40" width="56" height="22" text="{itemcount}" font_size="20" effect="outline" justify="{#hasdurability ? 'Center' : 'Right'}"/>
+        <label depth="7" name="timer"      pos="28,-34" width="56" height="18" font_size="18" justify="center" pivot="center" effect="outline" color="[beige]"/>
 
-        <sprite depth="5"  name="disabledOverlay" color="[darkGrey_half_alpha]" pos="1,-1" type="sliced" visible="false" width="51" height="51"/>
-        <button name="rectSlotLock" depth="15" style="press, hover" width="58" height="58" visible="{# defined('userlockmode') and userlockmode}" sprite="" hoverscale="1" use_selection_box="true">
-          <sprite depth="16" name="slotLockIcon" width="18" height="18" sprite="{# !defined('userlockmode') ? '' : (userlockedslot ? 'ui_game_symbol_lock' : 'ui_game_symbol_unlock') }" pos="38,-12" pivot="center" color="{# !defined('userlockmode') ? '255,255,255,1' : (userlockedslot ? '222,206,163' : '255,255,255') }"/>
+        <sprite depth="5"  name="disabledOverlay" color="[darkGrey_half_alpha]" pos="0,0" type="sliced" visible="false" width="56" height="56"/>
+        <button name="rectSlotLock" depth="15" style="press, hover" width="56" height="56" visible="{# defined('userlockmode') and userlockmode}" sprite="" hoverscale="1" use_selection_box="true">
+          <sprite depth="16" name="slotLockIcon" width="18" height="18" sprite="{# !defined('userlockmode') ? '' : (userlockedslot ? 'ui_game_symbol_lock' : 'ui_game_symbol_unlock') }" pos="37,-14" pivot="center" color="{# !defined('userlockmode') ? '255,255,255,1' : (userlockedslot ? '222,206,163' : '255,255,255') }"/>
         </button>
-        <sprite depth="15" name="iconSlotLock" width="16" height="16" sprite="ui_game_symbol_lock" pos="38,-12" pivot="center" visible="{# defined('userlockmode') and !userlockmode and userlockedslot }" color="[lightGrey]"/>
+        <sprite depth="15" name="iconSlotLock" width="16" height="16" sprite="ui_game_symbol_lock" pos="37,-14" pivot="center" visible="{# defined('userlockmode') and !userlockmode and userlockedslot }" color="[lightGrey]"/>
       </rect>
     </backpack_item_stack_compact>
   </append>
