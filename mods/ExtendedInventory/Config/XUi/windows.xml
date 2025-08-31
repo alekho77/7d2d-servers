@@ -1,9 +1,9 @@
 <configs>
-  <!-- Grid geometry: 6 rows × 10 cols, 58px cells -->
+  <!-- Grid geometry: 6 rows × 10 cols, 60px cells -->
   <set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/grid[@name='inventory']/@rows">6</set>
   <set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/grid[@name='inventory']/@cols">10</set>
-  <set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/grid[@name='inventory']/@cell_width">58</set>
-  <set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/grid[@name='inventory']/@cell_height">58</set>
+  <set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/grid[@name='inventory']/@cell_width">60</set>
+  <set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/grid[@name='inventory']/@cell_height">60</set>
 
   <!-- Replace default item stack element with our compact template -->
   <remove xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/grid[@name='inventory']/backpack_item_stack"/>
@@ -11,7 +11,7 @@
     <backpack_item_stack_compact name="0"/>
   </append>
 
-  <!-- Background resized to exactly match 10×58 and 6×58 (580×348) -->
-  <set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/sprite[@name='backgroundMain']/@width">580</set>
-  <set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/sprite[@name='backgroundMain']/@height">348</set>
+  <!-- Background resized to exactly match 10×60 and 6×60 (600×360) -->
+  <set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/sprite[@name='backgroundMain']/@width">600</set>
+  <set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/sprite[@name='backgroundMain']/@height">360</set>
 </configs>
