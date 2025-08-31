@@ -5,24 +5,24 @@
   <!-- Provides classic NVG look with enhanced brightness for very dark nights -->
   
   <append xpath="/item_modifiers/item_modifier[@name='modArmorNightVision']">
-    <!-- Включение NVG: комбинация NightVision (стандартный зеленый эффект) + Bright (дополнительное освещение) -->
+    <!-- Enable NVG: combination of NightVision (standard green effect) + Bright (additional lighting) -->
     
-    <!-- Стандартный эффект ночного видения -->
+    <!-- Standard night vision effect -->
     <set xpath="effect_group/triggered_effect[@action='ModifyScreenEffect' and @trigger='onSelfItemActivate']/@effect_name">NightVision</set>
     <set xpath="effect_group/triggered_effect[@action='ModifyScreenEffect' and @trigger='onSelfItemActivate']/@intensity">1.0</set>
     <set xpath="effect_group/triggered_effect[@action='ModifyScreenEffect' and @trigger='onSelfItemActivate']/@fade">1.2</set>
     
-    <!-- Дополнительный эффект освещения - Bright -->
+    <!-- Additional lighting effect - Bright -->
     <triggered_effect trigger="onSelfItemActivate" action="ModifyScreenEffect" effect_name="Bright" intensity="0.9" fade="1.2"/>
 
-    <!-- Выключение NVG - отключаем оба эффекта -->
+    <!-- Disable NVG - turn off both effects -->
     <set xpath="effect_group/triggered_effect[@action='ModifyScreenEffect' and @trigger='onSelfItemDeactivate']/@effect_name">NightVision</set>
     <set xpath="effect_group/triggered_effect[@action='ModifyScreenEffect' and @trigger='onSelfItemDeactivate']/@intensity">0</set>
     <set xpath="effect_group/triggered_effect[@action='ModifyScreenEffect' and @trigger='onSelfItemDeactivate']/@fade">1.2</set>
     
     <triggered_effect trigger="onSelfItemDeactivate" action="ModifyScreenEffect" effect_name="Bright" intensity="0" fade="1.2"/>
 
-    <!-- Снятие очков - гасим оба эффекта -->
+    <!-- Remove goggles - disable both effects -->
     <set xpath="effect_group/triggered_effect[@action='ModifyScreenEffect' and @trigger='onSelfEquipStop']/@effect_name">NightVision</set>
     <set xpath="effect_group/triggered_effect[@action='ModifyScreenEffect' and @trigger='onSelfEquipStop']/@intensity">0</set>
     <set xpath="effect_group/triggered_effect[@action='ModifyScreenEffect' and @trigger='onSelfEquipStop']/@fade">1.2</set>
