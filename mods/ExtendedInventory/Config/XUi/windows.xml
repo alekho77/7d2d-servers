@@ -11,7 +11,7 @@
     <backpack_item_stack_compact name="0"/>
   </append>
 
-  <!-- Background resized to exactly match 10×60 and 6×60 (600×360) -->
-  <set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/sprite[@name='backgroundMain']/@width">600</set>
-  <set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/sprite[@name='backgroundMain']/@height">360</set>
+  <!-- Background resized to exactly match 10×60 and 6×60 (600×360) plus 3px border -->
+  <set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/sprite[@name='backgroundMain']/@width">606</set>
+  <set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/sprite[@name='backgroundMain']/@height">366</set>
 </configs>
