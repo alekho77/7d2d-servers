@@ -3,7 +3,7 @@
   <append xpath="/controls">
     <!-- Default template - no borders (will be covered by grid lines) -->
     <backpack_item_stack_compact>
-      <rect controller="ItemStack" style="itemStack, hover" collider_scale="1.0" on_scroll="false" allow_dropping="true" prefix_id="false" show_favorites="false" tooltip="{tooltip}">
+      <rect controller="ItemStack" style="itemStack, hover" collider_scale="1.0" on_scroll="false" allow_dropping="true" prefix_id="false" show_favorites="false" tooltip="{tooltip}" enabled="{# !defined('userlockmode') or !userlockmode}">
         <!-- Gray background with border -->
         <sprite depth="2" name="backgroundMain" sprite="menu_empty3px" type="sliced" fillcenter="true" width="60" height="60" color="[darkGrey]"/>
         <sprite depth="3" name="background" sprite="menu_empty3px" type="sliced" fillcenter="false" width="60" height="60" color="{selectionbordercolor}"/>
@@ -28,6 +28,11 @@
 
         <label depth="7" name="stackValue" pos="0,-44" width="60" height="22" text="{itemcount}" font_size="20" effect="outline" justify="{#hasdurability ? 'Center' : 'Right'}"/>
         <label depth="7" name="timer"      pos="30,-38" width="60" height="18" font_size="18" justify="center" pivot="center" effect="outline" color="[beige]"/>
+        
+        <!-- Additional UI elements for complete functionality -->
+        <sprite depth="9" name="cancel" sprite="ui_game_symbol_x" width="60" height="60" color="255,0,0,255" type="sliced" visible="{# ishovered and islocked}" foregroundlayer="true"/>
+        <sprite depth="13" name="assembleIcon" size="30,30" sprite="{stacklockicon}" color="{stacklockcolor}" visible="{isassemblelocked}" pos="12,-12" foregroundlayer="true"/>
+        <sprite depth="14" name="quickswapIcon" size="24,24" sprite="server_refresh" pos="32,-2" foregroundlayer="true" visible="{isQuickSwap}"/>
 
         <sprite depth="5"  name="disabledOverlay" color="[darkGrey_half_alpha]" pos="0,0" type="sliced" visible="false" width="60" height="60"/>
         <button name="rectSlotLock" depth="15" style="press, hover" width="60" height="60" visible="{# defined('userlockmode') and userlockmode}" sprite="" hoverscale="1" use_selection_box="true">
