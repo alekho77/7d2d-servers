@@ -14,8 +14,4 @@
   <!-- Background resized to exactly match 10×56 and 6×56 (like vanilla 9×67 -> 603×336) -->
   <set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/sprite[@name='backgroundMain']/@width">560</set>
   <set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/sprite[@name='backgroundMain']/@height">336</set>
-
-  <!-- Optional: ensure the backpack never overlaps the toolbelt on any aspect ratios -->
-  <set xpath="/windows/window[@name='windowBackpack']/@anchor">CenterBottom</set>
-  <set xpath="/windows/window[@name='windowBackpack']/@pos">0,330</set>
 </configs>
