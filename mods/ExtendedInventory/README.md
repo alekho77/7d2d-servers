@@ -2,55 +2,64 @@
 
 ## Description
 
-This mod extends the player's inventory by adding a 6th row (9 additional slots) that initially works with the encumbered effect. The key feature of the mod is that the "Pack Mule" perk progression does NOT remove the encumbered effect from this additional row.
+This mod extends the player's inventory from 5 rows (45 slots) to 6 rows (60 slots) with optimized compact cell design. The mod features custom-scaled item icons and UI elements specifically designed for 60px cells to provide a clean, professional appearance.
 
 ## Features
 
-### Basic mechanics:
+### Visual improvements:
+- **Compact cell design**: 60×60px cells (down from 67×67px vanilla)
+- **Scaled item icons**: 57×57px icons perfectly fitted to compact cells
+- **Optimized UI elements**: All durability bars, labels, and overlays scaled proportionally
+- **Clean borders**: 2px thickness for crisp appearance without visual clutter
+- **Proper encumbrance display**: Full support for overweight item highlighting
+
+### Inventory expansion:
 - **Standard inventory**: 5 rows × 9 slots = 45 slots
-- **Extended inventory**: 6 rows × 9 slots = 54 slots
-- **6th row**: always with encumbered effect by default
+- **Extended inventory**: 6 rows × 10 slots = 60 slots
+- **Additional slots**: +15 inventory slots total
+- **Optimized layout**: Fits perfectly without overlapping toolbelt on 16:9 and 5:3 screen ratios
 
-### How to remove encumbrance from the 6th row:
-The only way to remove the encumbered effect from the additional row is to use **standard armor modifications**:
-
-1. **Storage Pocket** (`modArmorStoragePocket`) - +1 slot
-2. **Double Storage Pocket** (`modArmorDoubleStoragePocket`) - +2 slots  
-3. **Triple Storage Pocket** (`modArmorTripleStoragePocket`) - +3 slots
-4. **Quad Storage Pocket** (`modArmorQuadStoragePocket`) - +4 slots
-
-### How it works:
-- **Without modifications**: 45 slots available without encumbrance (standard game with maximum Pack Mule)
-- **6th row**: slots 46-54 always with encumbrance, Pack Mule doesn't affect them
-- **With pocket mods**: +1 to +4 additional slots per armor piece
-- **Maximum configuration**: 45 (standard) + 16 (4 armor pieces × 4 slots) = 61 slots without encumbrance
-
-## Gameplay advantages
-
-1. **Long-term value of pocket mods**: These modifications remain useful even after maximum Pack Mule progression
-2. **Strategic choice**: Players must decide which armor modifications to use - protective or inventory-expanding
-3. **Progression**: Gradual increase in available space through equipment improvement
+### Technical implementation:
+- **Custom item template**: `backpack_item_stack_compact` with optimized scaling
+- **Professional UI design**: All elements (icons, durability bars, labels) properly scaled
+- **Background sizing**: Inventory window background automatically adjusted to 606×366px
+- **Compatible with vanilla**: Works with all standard game mechanics (Pack Mule, encumbrance, etc.)
 
 ## Mod files
 
-- `ModInfo.xml` - Basic mod information
-- `Config/XUi/windows.xml` - Interface changes (6 inventory rows)
+- `ModInfo.xml` - Basic mod information and metadata
+- `Config/XUi/controls.xml` - Custom compact item stack template definition
+- `Config/XUi/windows.xml` - Inventory window configuration (6×10 grid, cell sizing, template usage)
 
 ## Compatibility
 
-The mod may conflict with other mods that change:
-- Inventory size
-- Carry capacity system  
-- Armor modifications
-- Inventory interface
+The mod is designed to be maximally compatible with the vanilla game and other mods. It may have conflicts with mods that:
+- Modify inventory cell templates or sizing
+- Change the inventory window layout significantly
+- Override the `backpack_item_stack` control template
+- Alter inventory grid dimensions
+
+**Note**: This mod uses a separate `backpack_item_stack_compact` template, so it's unlikely to conflict with most inventory-related mods.
 
 ## Installation
 
-1. Copy the `ExtendedInventory` folder to your server's `Mods` directory
-2. Restart the server
-3. Enjoy the extended inventory!
+1. Download and extract the mod
+2. Copy the `ExtendedInventory` folder to your `Mods` directory
+   - **Client**: `7 Days To Die/Mods/`
+   - **Server**: `[ServerFolder]/Mods/`
+3. Restart the game/server
+4. Enjoy your expanded and visually improved inventory!
+
+## Version History
+
+### v1.1.0
+- Initial release with 6×10 inventory grid (60 slots)
+- Custom compact cell design (60×60px)
+- Proportionally scaled UI elements
+- Optimized for multiple screen ratios
 
 ---
 
 *Author: Aleksei Khozin*  
-*Version: 1.0.0*
+*Version: 1.1.0*  
+*Compatible with: 7 Days to Die A21+*

@@ -1,10 +1,17 @@
 <configs>
-	<!-- Extend player inventory to 6 rows (54 slots) -->
-	<set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/grid[@name='inventory']/@rows">6</set>
-	
-	<!-- Increase inventory window height for the 6th row -->
-	<set xpath="/windows/window[@name='windowBackpack']/@height">424</set>
-	
-	<!-- Increase content panel height -->
-	<set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/@height">378</set>
+  <!-- Grid geometry: 6 rows × 10 cols, 60px cells -->
+  <set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/grid[@name='inventory']/@rows">6</set>
+  <set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/grid[@name='inventory']/@cols">10</set>
+  <set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/grid[@name='inventory']/@cell_width">60</set>
+  <set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/grid[@name='inventory']/@cell_height">60</set>
+
+  <!-- Replace default item stack element with our compact template -->
+  <remove xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/grid[@name='inventory']/backpack_item_stack"/>
+  <append xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/grid[@name='inventory']">
+    <backpack_item_stack_compact name="0"/>
+  </append>
+
+  <!-- Background resized to exactly match 10×60 and 6×60 (600×360) plus 3px border -->
+  <set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/sprite[@name='backgroundMain']/@width">606</set>
+  <set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/sprite[@name='backgroundMain']/@height">366</set>
 </configs>
