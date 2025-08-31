@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <!-- Enhanced Night Vision for Darker Nights mod -->
+  <!-- Combines Bright (main lighting) + VibrantDeSat (removes acid colors) effects -->
+  <!-- This combo provides better visibility without excessive "daylight" effect -->
+  
+  <append xpath="/item_modifiers/item_modifier[@name='modArmorNightVision']">
+    <!-- Включение NVG: комбинация Bright (основной свет) + VibrantDeSat (убираем кислотность) -->
+    
+    <!-- Основной эффект освещения - Bright -->
+    <set xpath="effect_group/triggered_effect[@action='ModifyScreenEffect' and @trigger='onSelfItemActivate']/@effect_name">Bright</set>
+    <set xpath="effect_group/triggered_effect[@action='ModifyScreenEffect' and @trigger='onSelfItemActivate']/@intensity">0.75</set>
+    <set xpath="effect_group/triggered_effect[@action='ModifyScreenEffect' and @trigger='onSelfItemActivate']/@fade">0.4</set>
+    
+    <!-- Дополнительный эффект для читаемости - VibrantDeSat -->
+    <triggered_effect trigger="onSelfItemActivate" action="ModifyScreenEffect" effect_name="VibrantDeSat" intensity="0.3" fade="0.4"/>
+
+    <!-- Выключение NVG - отключаем оба эффекта -->
+    <set xpath="effect_group/triggered_effect[@action='ModifyScreenEffect' and @trigger='onSelfItemDeactivate']/@effect_name">Bright</set>
+    <set xpath="effect_group/triggered_effect[@action='ModifyScreenEffect' and @trigger='onSelfItemDeactivate']/@intensity">0</set>
+    <set xpath="effect_group/triggered_effect[@action='ModifyScreenEffect' and @trigger='onSelfItemDeactivate']/@fade">0.4</set>
+    
+    <triggered_effect trigger="onSelfItemDeactivate" action="ModifyScreenEffect" effect_name="VibrantDeSat" intensity="0" fade="0.4"/>
+
+    <!-- Снятие очков - гасим оба эффекта -->
+    <set xpath="effect_group/triggered_effect[@action='ModifyScreenEffect' and @trigger='onSelfEquipStop']/@effect_name">Bright</set>
+    <set xpath="effect_group/triggered_effect[@action='ModifyScreenEffect' and @trigger='onSelfEquipStop']/@intensity">0</set>
+    <set xpath="effect_group/triggered_effect[@action='ModifyScreenEffect' and @trigger='onSelfEquipStop']/@fade">0.4</set>
+    
+    <triggered_effect trigger="onSelfEquipStop" action="ModifyScreenEffect" effect_name="VibrantDeSat" intensity="0" fade="0.4"/>
+  </append>
+</config>

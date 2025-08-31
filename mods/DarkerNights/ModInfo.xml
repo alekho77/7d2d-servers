@@ -2,8 +2,8 @@
 <ModInfo>
   <Name value="DarkerNights"/>
   <DisplayName value="Darker Nights"/>
-  <Description value="Makes nights darker for more immersive gameplay"/>
+  <Description value="Makes nights darker for more immersive gameplay. Includes enhanced night vision goggles with VibrantDeSat effect for better visibility in dark nights."/>
   <Author value="Aleksei Khozin"/>
-  <Version value="1.0.0"/>
+  <Version value="1.1.0"/>
   <Website value="https://alekho77.github.io/7d2d-servers/"/>
 </ModInfo>
