@@ -1,11 +1,9 @@
 <configs>
-  <!-- Grid geometry: 6 rows × 10 cols, 58px cells with grid lines -->
+  <!-- Grid geometry: 6 rows × 10 cols, 58px cells -->
   <set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/grid[@name='inventory']/@rows">6</set>
   <set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/grid[@name='inventory']/@cols">10</set>
   <set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/grid[@name='inventory']/@cell_width">58</set>
   <set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/grid[@name='inventory']/@cell_height">58</set>
-  <set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/grid[@name='inventory']/@side_icon_color">[lightGrey]</set>
-  <set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/grid[@name='inventory']/@highlight_color">[lightGrey]</set>
 
   <!-- Replace default item stack element with our compact template -->
   <remove xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/grid[@name='inventory']/backpack_item_stack"/>

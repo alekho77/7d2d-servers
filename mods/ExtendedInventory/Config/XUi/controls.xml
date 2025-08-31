@@ -4,8 +4,8 @@
     <!-- Default template - no borders (will be covered by grid lines) -->
     <backpack_item_stack_compact>
       <rect controller="ItemStack" style="itemStack, hover" collider_scale="1.0" on_scroll="false" allow_dropping="true" prefix_id="false" show_favorites="false" tooltip="{tooltip}">
-        <!-- No background border - clean look with grid lines -->
-        <sprite depth="3" name="background" sprite="menu_empty" type="sliced" fillcenter="true" width="58" height="58" color="[clear]"/>
+        <!-- Simple background border for clean look -->
+        <sprite depth="3" name="background" sprite="menu_empty3px" type="sliced" fillcenter="false" width="58" height="58" color="{selectionbordercolor}"/>
 
         <!-- Item icon scaled down to fit 58×58 -->
         <sprite depth="6" name="itemIcon" atlas="ItemIconAtlas" sprite="{itemicon}" width="55" height="55" pivot="center" foregroundlayer="true" color="{iconcolor}" pos="29,-29"/>
