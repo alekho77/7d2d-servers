@@ -4,8 +4,8 @@
     <!-- Default template - no borders (will be covered by grid lines) -->
     <backpack_item_stack_compact>
       <rect controller="ItemStack" style="itemStack, hover" collider_scale="1.0" on_scroll="false" allow_dropping="true" prefix_id="false" show_favorites="false" tooltip="{tooltip}" enabled="{# !defined('userlockmode') or !userlockmode}">
-        <!-- Gray background with 2px border -->
-        <sprite depth="2" name="backgroundMain" sprite="menu_empty2px" type="sliced" fillcenter="true" width="60" height="60" color="[darkGrey]"/>
+        <!-- Gray background with 2px border - made more transparent like stats panel -->
+        <sprite depth="2" name="backgroundMain" sprite="menu_empty2px" type="sliced" fillcenter="true" width="60" height="60" color="[darkGrey_half_alpha]"/>
         <sprite depth="3" name="background" sprite="menu_empty2px" type="sliced" fillcenter="false" width="60" height="60" color="{selectionbordercolor}"/>
         
         <!-- Dynamic background overlay for encumbered/overweight items -->
@@ -22,8 +22,8 @@
         <sprite depth="8" name="lockTypeIcon"    sprite="{locktypeicon}"            width="18" height="18" pos="2,-2"  foregroundlayer="true"/>
         <sprite depth="8" name="itemtypeicon"    sprite="ui_game_symbol_{itemtypeicon}" width="18" height="18" pos="2,-2" foregroundlayer="true" visible="{hasitemtypeicon}" color="{itemtypeicontint}"/>
 
-        <!-- Durability bar with 2px thickness -->
-        <sprite       depth="3" name="durabilityBackground" sprite="menu_empty2px" type="sliced" width="56" height="7" pos="2,-51" color="[darkGrey]"  foregroundlayer="true" visible="{hasdurability}"/>
+        <!-- Durability bar with 2px thickness - made more transparent -->
+        <sprite       depth="3" name="durabilityBackground" sprite="menu_empty2px" type="sliced" width="56" height="7" pos="2,-51" color="[darkGrey_half_alpha]"  foregroundlayer="true" visible="{hasdurability}"/>
         <filledsprite depth="4" name="durability"           sprite="menu_empty2px" type="filled" width="56" height="7" pos="2,-51" color="{durabilitycolor}" fill="{durabilityfill}" foregroundlayer="true" visible="{hasdurability}"/>
 
         <label depth="7" name="stackValue" pos="0,-44" width="60" height="22" text="{itemcount}" font_size="20" effect="outline" justify="{#hasdurability ? 'Center' : 'Right'}"/>
