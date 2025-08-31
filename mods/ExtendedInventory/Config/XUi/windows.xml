@@ -16,6 +16,6 @@
   <set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/sprite[@name='backgroundMain']/@height">336</set>
 
   <!-- Optional: ensure the backpack never overlaps the toolbelt on any aspect ratios -->
-  <setattribute xpath="/windows/window[@name='windowBackpack']" name="anchor" value="CenterBottom"/>
-  <setattribute xpath="/windows/window[@name='windowBackpack']" name="pos" value="0,330"/>
+  <set xpath="/windows/window[@name='windowBackpack']/@anchor">CenterBottom</set>
+  <set xpath="/windows/window[@name='windowBackpack']/@pos">0,330</set>
 </configs>
