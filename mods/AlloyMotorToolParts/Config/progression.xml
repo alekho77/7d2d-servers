@@ -10,18 +10,16 @@
   <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingSalvageTools']/effect_group">
     <!-- level="76,100" means: enable tag from level 76 and onwards -->
     <passive_effect name="RecipeTagUnlocked" operation="base_set"
-                    level="76,100" value="1" tags="mtPartsA_Alloy_unlock"/>
+                    level="76,100" value="1" tags="toolPartsA_unlock"/>
   </append>
 
   <!-- Add display entry in progression menu (Salvage Tools tab) -->
-  <!-- Insert separate line-tile at the end of the list -->
-  <insertAfter xpath="/progression/crafting_skills/crafting_skill[@name='craftingSalvageTools']/display_entry[last()]">
-    <display_entry icon="meleeToolAxeT3ChainsawParts"
-                   has_quality="false"
-                   name_key="salvageTools_IndustrialPartsA"
-                   unlock_level="76">
-      <unlock_entry item="motorToolPartsA_Alloy" unlock_tier="1"/>
-    </display_entry>
-  </insertAfter>
+  <!-- First, add unlock level 76 to existing display entry -->
+  <set xpath="/progression/crafting_skills/crafting_skill[@name='craftingSalvageTools']/display_entry[last()]/@unlock_level">51,55,60,65,70,75,76</set>
+  
+  <!-- Then add unlock_entry for our item to existing display entry -->
+  <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingSalvageTools']/display_entry[last()]">
+    <unlock_entry item="motorToolPartsA_Alloy" unlock_tier="1"/>
+  </append>
   
 </configs>
