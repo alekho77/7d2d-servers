@@ -3,6 +3,9 @@
   <!-- Alloy Motor Tool Parts Mod - Progression System -->
   <!-- Unlocks recipe after reading 76th Scrapping 4 Fun magazine -->
   
+  <!-- Increase max_level for Salvage Tools to allow reading beyond vanilla limit of 75 -->
+  <set xpath="/progression/crafting_skills/crafting_skill[@name='craftingSalvageTools']/@max_level">100</set>
+  
   <!-- Add unlock for recipe after 76 magazines read in Salvage Tools skill -->
   <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingSalvageTools']/effect_group">
     <!-- level="76,100" means: enable tag from level 76 and onwards -->
