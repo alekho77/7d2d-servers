@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+  <!-- Alloy Motor Tool Parts Mod -->
+  <!-- Adds Tier A enhanced motor tool parts -->
+  
+  <append xpath="/items">
+    
+    <!-- Alloy Motor Tool Parts (Tier A) -->
+    <item name="motorToolPartsA_Alloy">
+      <property name="Extends" value="meleeToolAxeT3ChainsawParts"/>  <!-- inherit tags and material -->
+      <property name="CustomIcon" value="meleeToolAxeT3ChainsawParts"/> <!-- same icon -->
+      <property name="CustomIconTint" value="7A8C9E"/> <!-- steel-blue for 'Alloy Steel' -->
+      <property name="EconomicValue" value="1400"/> <!-- calculated: (200 + 250 + 250) * 2 -->
+      <property name="DescriptionKey" value="motorToolPartsA_AlloyDesc"/>
+      <property name="DisplayType" value="resourceGeneric"/>
+    </item>
+    
+  </append>
+  
+</configs>

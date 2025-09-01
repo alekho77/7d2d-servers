@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+  <!-- Alloy Motor Tool Parts Mod -->
+  <!-- Adds recipe for Tier A enhanced motor tool parts -->
+  
+  <append xpath="/recipes">
+    
+    <!-- Recipe for Alloy Motor Tool Parts (Tier A) -->
+    <recipe name="motorToolPartsA_Alloy" count="1" craft_area="workbench" craft_time="60" tags="learnable,workbenchCrafting">
+      <ingredient name="meleeToolAxeT3ChainsawParts" count="1"/>   <!-- regular motor tool parts -->
+      <ingredient name="resourceSilverNugget" count="1"/>         <!-- silver nugget -->
+      <ingredient name="resourceForgedSteel" count="5"/>          <!-- 5 forged steel -->
+    </recipe>
+    
+  </append>
+  
+</configs>
