@@ -1,3 +1,4 @@
 Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,russian
 motorToolPartsA_AlloyDesc,items,Text,,,These enhanced motor tool parts are made from a special alloy of steel and silver providing superior durability and performance.,,"Эти улучшенные части бензоинструмента изготовлены из специального сплава стали и серебра, обеспечивающего превосходную прочность и производительность."
 motorToolPartsA_Alloy,items,Item,,,Alloy Motor Tool Parts,,"Легированные части бензоинструмента"
+salvageTools_IndustrialPartsA,progression,Text,,,Industrial Parts: Tier A,,"Индустриальные части: Tier A"

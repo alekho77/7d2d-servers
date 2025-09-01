@@ -6,7 +6,7 @@
   <append xpath="/recipes">
     
     <!-- Recipe for Alloy Motor Tool Parts (Tier A) -->
-    <recipe name="motorToolPartsA_Alloy" count="1" craft_area="workbench" craft_time="60" tags="learnable,workbenchCrafting,mtPartsA_Alloy_unlock">
+    <recipe name="motorToolPartsA_Alloy" count="1" craft_area="workbench" craft_time="60" tags="workbenchCrafting,mtPartsA_Alloy_unlock">
       <ingredient name="meleeToolAxeT3ChainsawParts" count="1"/>   <!-- regular motor tool parts -->
       <ingredient name="resourceSilverNugget" count="1"/>         <!-- silver nugget -->
       <ingredient name="resourceForgedSteel" count="5"/>          <!-- 5 forged steel -->
