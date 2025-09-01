@@ -16,11 +16,7 @@
   <!-- Add display entry in progression menu (Salvage Tools tab) -->
   <!-- Insert separate line-tile at the end of the list -->
   <insertAfter xpath="/progression/crafting_skills/crafting_skill[@name='craftingSalvageTools']/display_entry[last()]">
-    <display_entry icon="meleeToolAxeT3ChainsawParts" has_quality="false"
-                   name_key="salvageTools_IndustrialPartsA"
-                   unlock_level="76">
-      <unlock_entry item="motorToolPartsA_Alloy" unlock_tier="1"/>
-    </display_entry>
+    <display_entry item="motorToolPartsA_Alloy" unlock_level="76"/>
   </insertAfter>
   
 </configs>
