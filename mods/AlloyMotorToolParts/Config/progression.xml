@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+  <!-- Alloy Motor Tool Parts Mod - Progression System -->
+  <!-- Unlocks recipe after reading 76th Scrapping 4 Fun magazine -->
+  
+  <!-- Add unlock for recipe after 76 magazines read in Salvage Tools skill -->
+  <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingSalvageTools']/effect_group">
+    <!-- level="76,100" means: enable tag from level 76 and onwards -->
+    <passive_effect name="RecipeTagUnlocked" operation="base_set"
+                    level="76,100" value="1" tags="mtPartsA_Alloy_unlock"/>
+  </append>
+
+  <!-- Add display entry in progression menu (Salvage Tools tab) -->
+  <!-- Insert separate line-tile at the end of the list -->
+  <insertAfter xpath="/progression/crafting_skills/crafting_skill[@name='craftingSalvageTools']/display_entry[last()]">
+    <display_entry icon="meleeToolAxeT3ChainsawParts" has_quality="false"
+                   name_key="salvageTools_IndustrialPartsA"
+                   unlock_level="76">
+      <unlock_entry item="motorToolPartsA_Alloy" unlock_tier="1"/>
+    </display_entry>
+  </insertAfter>
+  
+</configs>
