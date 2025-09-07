@@ -1,9 +1,9 @@
 <ServerSettings>
    <property name="ServerName" value="EpicVales PVE #1"/>
-   <property name="ServerDescription" value="PVE, light server mods. Weaker zombies are offset by their numbers, speed, and high damage. Traders 24/7. Details on the website.\n\nPVE, легкие серверные моды. Слабость зомби компенсирована их количеством, скоростью и высоким уроном. Торговцы 24/7. Подробности на сайте."/>
+   <property name="ServerDescription" value="[87CEEB]PVE, light server mods. Weaker zombies are offset by their numbers, speed, and high damage. Traders 24/7. Details on the website.[-]\n\n[CD5C5C]PVE, легкие серверные моды. Слабость зомби компенсирована их количеством, скоростью и высоким уроном. Торговцы 24/7. Подробности на сайте.[-]\n"/>
    <property name="ServerWebsiteURL" value="https://www.epicvales.online/servers/7d2d"/>
    <property name="ServerPassword" value=""/>
-   <property name="ServerLoginConfirmationText" value="Welcome! We're happy to see everyone who plays fair and friendly. Respect others. Enjoy the game!\n\nДобро пожаловать! У нас рады всем, кто играет честно и по-доброму. Уважайте других. Приятной игры!"/>
+   <property name="ServerLoginConfirmationText" value="[87CEEB]Welcome! We're happy to see everyone who plays fair and friendly. Respect others. Enjoy the game![-]\n\n[CD5C5C]Добро пожаловать! У нас рады всем, кто играет честно и по-доброму. Уважайте других. Приятной игры![-]"/>
    <property name="Region" value="Russia"/>
    <property name="Language" value="English, Russian"/>
    <property name="ServerPort" value="28628"/>
