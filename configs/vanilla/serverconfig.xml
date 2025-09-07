@@ -1,16 +1,16 @@
 <ServerSettings>
-   <property name="ServerName" value="EpicVales PVE Vanilla"/>
-   <property name="ServerDescription" value="[00FF00]PVE, легкие серверные моды[-].\nЗомби [FF0000]быстрые и много[-]. Торговцы работают [00CFFF]24/7[-]\nДо [FFFF00]3 клаймов[-] на игрока\n\nВайп [FF0000]12.08.25[-]. Карта [FF0000]8K[-]"/>
-   <property name="ServerWebsiteURL" value="https://www.epicvales.online/"/>
+   <property name="ServerName" value="EpicVales PVE #1"/>
+   <property name="ServerDescription" value="PVE, light server mods. Weaker zombies are offset by their numbers, speed, and high damage. Traders 24/7. Details on the website.\n\nPVE, легкие серверные моды. Слабость зомби компенсирована их количеством, скоростью и высоким уроном. Торговцы 24/7. Подробности на сайте."/>
+   <property name="ServerWebsiteURL" value="https://www.epicvales.online/servers/7d2d"/>
    <property name="ServerPassword" value=""/>
-   <property name="ServerLoginConfirmationText" value="Добро пожаловать! У нас рады всем, кто играет честно и по-доброму. Уважайте других. Приятной игры!"/>
+   <property name="ServerLoginConfirmationText" value="Welcome! We're happy to see everyone who plays fair and friendly. Respect others. Enjoy the game!\n\nДобро пожаловать! У нас рады всем, кто играет честно и по-доброму. Уважайте других. Приятной игры!"/>
    <property name="Region" value="Russia"/>
-   <property name="Language" value="Russian"/>
+   <property name="Language" value="English, Russian"/>
    <property name="ServerPort" value="28628"/>
    <property name="ServerVisibility" value="2"/>
    <property name="ServerDisabledNetworkProtocols" value="SteamNetworking"/>
    <property name="ServerMaxWorldTransferSpeedKiBs" value="512"/>
-   <property name="ServerMaxPlayerCount" value="20"/>
+   <property name="ServerMaxPlayerCount" value="15"/>
    <property name="ServerReservedSlots" value="0"/>
    <property name="ServerReservedSlotsPermission" value="100"/>
    <property name="ServerAdminSlots" value="0"/>
