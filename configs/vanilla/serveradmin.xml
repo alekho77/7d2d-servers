@@ -55,7 +55,7 @@
   <users>
     <!-- <user platform="Steam" userid="76561198021925107" name="Hint on who this user is" permission_level="0" /> -->
     <!-- <group steamID="103582791434672565" name="Steam Universe" permission_level_default="1000" permission_level_mod="0" /> -->
-    <user platform="Steam" userid="76561198022653121" name="Admin" permission_level="1" />
+    <user platform="Steam" userid="76561198022653121" name="dymon" permission_level="1" />
     <user platform="Steam" userid="76561198184701746" name="alekho" permission_level="1" />
   </users>
   <whitelist>
@@ -72,8 +72,8 @@
   </blacklist>
   <commands>
     <!-- <permission cmd="dm" permission_level="0" /> -->
-    <!-- <permission cmd="kick" permission_level="1" /> -->
-    <!-- <permission cmd="say" permission_level="1000" /> -->
+    <permission cmd="teleport" permission_level="1" />
+    <permission cmd="sayplayer" permission_level="1" />
     <permission cmd="settime" permission_level="1" />
     <permission cmd="setgamestat" permission_level="1" />
     <permission cmd="rendermap" permission_level="1" />
